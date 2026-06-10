@@ -140,6 +140,11 @@ h1 {
 .signature-quote strong {
   font-weight: 650;
 }
+.signature-quote .quote-support {
+  display: block;
+  margin-top: 6px;
+  color: #303030;
+}
 .signature-quote cite {
   display: block;
   margin-top: 10px;
