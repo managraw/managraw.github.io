@@ -143,6 +143,33 @@ h1 {
   color: #303030;
   font-size: clamp(1.05rem, 2vw, 1.18rem);
 }
+.signature-quote {
+  max-width: var(--measure);
+  margin: 28px 0 0;
+  padding: 18px 0 18px 22px;
+  border-left: 3px solid var(--ink);
+  color: #222;
+}
+.signature-quote p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+.signature-quote strong {
+  font-weight: 650;
+}
+.signature-quote .quote-support {
+  display: block;
+  margin-top: 6px;
+  color: #303030;
+}
+.signature-quote cite {
+  display: block;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-style: normal;
+}    
 .hero-links {
   margin-top: 28px;
   display: flex;
@@ -501,7 +528,7 @@ p { margin: 0 0 18px; }
           <h1>Manu Agrawal</h1>
           <p class="lede">Architect and Gen AI leader focused on governed agentic AI systems, healthcare AI, and cloud-scale production infrastructure for enterprise and regulated environments.</p>
           <blockquote class="signature-quote">
-            <p><strong>Build what improves itself&trade;.</strong> Those who build self-improving systems will build the future.</p>
+            <p><strong>Build what improves itself&trade;.</strong><span class="quote-support">Those who build self-improving systems will build the future.</span></p>
             <cite>Manu Agrawal</cite>
           </blockquote>
           <div class="hero-links" aria-label="Selected links">
