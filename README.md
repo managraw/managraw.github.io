@@ -1,41 +1,38 @@
 # Manu Agrawal personal website
 
-Static personal website for `manuagrawal.com`, designed for GitHub + Cloudflare Pages deployment.
+Static personal website for `manuagrawal.com`, designed for GitHub Pages or Cloudflare Pages.
+
+## Purpose
+
+This site is the canonical public profile for Manu Agrawal. It organizes public evidence around:
+
+- AI infrastructure, agentic AI, and healthcare AI work
+- External press and published material
+- Professional service and peer review
+- Recognition, memberships, and public profiles
+- A concise professional CV summary
 
 ## Files
 
-- `index.html` - homepage
-- `about.html` - professional narrative and thesis
-- `work.html` - selected public work and impact themes
-- `media.html` - press and expert commentary
-- `publications.html` - publications and technical writing hub
-- `service.html` - peer review, think tank, and roundtables
-- `recognition.html` - memberships, awards, and affiliations
-- `contact.html` - contact page
-- `style.css` - global styling
-- `sitemap.xml` and `robots.txt` - search discovery helpers
-- `_headers` - basic Cloudflare Pages security headers
-- `CNAME` - custom domain marker for GitHub Pages compatibility
+- `index.html` - official profile homepage
+- `about.html` - long-form professional profile
+- `work.html` - selected work areas
+- `media.html` - published material and press
+- `service.html` - peer review and professional service
+- `recognition.html` - memberships and public profiles
+- `cv.html` - public CV summary
+- `manu-agrawal-media-cover.jpg` - homepage and social preview image
+- `style.css` - shared styling
+- `sitemap.xml`, `robots.txt`, `CNAME`, `.nojekyll`, `404.html`
 
-## Before publishing
+## Deployment Notes
 
-1. Replace the LinkedIn placeholder in `contact.html` with your exact LinkedIn URL.
-2. Add exact paper titles and citations to `publications.html` only after acceptance or public availability.
-3. Add award names to `recognition.html` only where the award name, year, issuer, and selection context can be publicly shared.
-4. Confirm that all employer-related claims are public and non-confidential.
+1. Upload the entire folder contents at the repository root, not `index.html` alone.
+2. Keep `CNAME` if the site should resolve to `manuagrawal.com`.
+3. Keep `.nojekyll` for GitHub Pages static serving.
+4. Keep `manu-agrawal-media-cover.jpg` at the repository root so the homepage image and structured metadata resolve.
+5. Keep the sitemap current when public pages are added or removed.
 
-## Deployment with Cloudflare Pages
+## Content Notes
 
-1. Create a GitHub repository, for example `manuagrawal-site`.
-2. Upload all files in this folder to the repository root.
-3. In Cloudflare Pages, connect the GitHub repository.
-4. Use these settings:
-   - Framework preset: `None`
-   - Build command: leave blank
-   - Build output directory: `/`
-5. Add the custom domain `manuagrawal.com` in Cloudflare Pages.
-6. After deployment, submit `https://manuagrawal.com/sitemap.xml` in Google Search Console.
-
-## Important note on search indexing
-
-Google Search Console can request crawling and indexing, but no static site can guarantee first-page ranking or immediate indexing. The site includes clean internal structure, direct outbound links to public media coverage, and Schema.org markup to help search engines understand the identity and content.
+The site keeps the public profile focused on verified professional work, published material, recognition, and external profiles.

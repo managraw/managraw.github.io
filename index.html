@@ -3,173 +3,595 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Manu Agrawal | AI Infrastructure & Healthcare AI Architect</title>
-  <meta name="description" content="Official website of Manu Agrawal, focused on governed, trustworthy agentic AI systems for enterprise and regulated healthcare environments.">
+  <title>Manu Agrawal | AI Infrastructure, Agentic AI, and Healthcare AI</title>
+  <meta name="description" content="Official profile of Manu Agrawal, Chief Architect and Gen AI leader focused on governed agentic AI systems, healthcare AI, cloud infrastructure, and trustworthy enterprise AI deployment.">
   <link rel="canonical" href="https://manuagrawal.com/">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="profile">
   <meta property="og:site_name" content="Manu Agrawal">
-  <meta property="og:title" content="Manu Agrawal | AI Infrastructure & Healthcare AI Architect">
-  <meta property="og:description" content="Official website of Manu Agrawal, focused on governed, trustworthy agentic AI systems for enterprise and regulated healthcare environments.">
+  <meta property="og:title" content="Manu Agrawal | AI Infrastructure, Agentic AI, and Healthcare AI">
+  <meta property="og:description" content="Official profile of Manu Agrawal, Chief Architect and Gen AI leader focused on governed agentic AI systems, healthcare AI, cloud infrastructure, and trustworthy enterprise AI deployment.">
   <meta property="og:url" content="https://manuagrawal.com/">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Manu Agrawal | AI Infrastructure & Healthcare AI Architect">
-  <meta name="twitter:description" content="Official website of Manu Agrawal, focused on governed, trustworthy agentic AI systems for enterprise and regulated healthcare environments.">
-  <link rel="stylesheet" href="style.css">
+  <meta name="twitter:title" content="Manu Agrawal | AI Infrastructure, Agentic AI, and Healthcare AI">
+  <meta name="twitter:description" content="Official profile of Manu Agrawal, Chief Architect and Gen AI leader focused on governed agentic AI systems, healthcare AI, cloud infrastructure, and trustworthy enterprise AI deployment.">
+  <style data-critical-css>
+:root {
+  --bg: #ffffff;
+  --paper: #fbfbfa;
+  --ink: #171717;
+  --muted: #5f6368;
+  --line: #e8e5df;
+  --line-strong: #d7d2c8;
+  --link: #1f4f82;
+  --max: 960px;
+  --measure: 720px;
+}
+
+* { box-sizing: border-box; }
+html { color-scheme: light; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--link); text-decoration-thickness: 0.08em; text-underline-offset: 0.18em; }
+a:hover { text-decoration-thickness: 0.12em; }
+
+.container { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+.skip-link {
+  position: absolute;
+  top: 8px;
+  left: -999px;
+  padding: 8px 12px;
+  background: var(--ink);
+  color: #fff;
+  z-index: 10;
+}
+.skip-link:focus { left: 8px; }
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.96);
+}
+.header-inner {
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+.brand {
+  color: var(--ink);
+  text-decoration: none;
+  display: grid;
+  gap: 2px;
+  min-width: 260px;
+}
+.brand strong {
+  font-size: 1.06rem;
+  letter-spacing: -0.01em;
+  font-weight: 650;
+}
+.brand span {
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 14px;
+  font-size: 0.92rem;
+}
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+.nav a:hover,
+.nav a.active {
+  color: var(--ink);
+}
+.nav a.active {
+  border-bottom: 1px solid var(--ink);
+}
+
+.hero {
+  padding: 64px 0 42px;
+  border-bottom: 1px solid var(--line);
+}
+.hero-profile {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 52px;
+  align-items: center;
+}
+.profile-photo {
+  margin: 0;
+}
+.profile-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 40% top;
+  border: 1px solid var(--line);
+}
+.kicker {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+h1 {
+  margin: 0;
+  max-width: 760px;
+  font-size: clamp(2rem, 4vw, 2.85rem);
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+  font-weight: 650;
+}
+.lede {
+  max-width: var(--measure);
+  margin: 26px 0 0;
+  color: #303030;
+  font-size: clamp(1.05rem, 2vw, 1.18rem);
+}
+.hero-links {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.hero-links a {
+  font-weight: 560;
+}
+.hero-meta {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  color: #3a3a3a;
+  background: var(--paper);
+  font-size: 0.88rem;
+}
+
+.section {
+  padding: 44px 0;
+  border-bottom: 1px solid var(--line);
+}
+.section:last-child { border-bottom: 0; }
+.section-header {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 36px;
+  align-items: start;
+}
+h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  font-weight: 650;
+}
+.section-body {
+  max-width: var(--measure);
+}
+.section-body > :first-child { margin-top: 0; }
+.section-body > :last-child { margin-bottom: 0; }
+p { margin: 0 0 18px; }
+.muted { color: var(--muted); }
+
+.list {
+  display: grid;
+  gap: 26px;
+}
+.item {
+  padding-bottom: 26px;
+  border-bottom: 1px solid var(--line);
+}
+.item:last-child { border-bottom: 0; padding-bottom: 0; }
+.item h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 650;
+}
+.item .meta {
+  color: var(--muted);
+  margin-bottom: 8px;
+  font-size: 0.94rem;
+}
+.item p { color: #303030; }
+.item .links {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.94rem;
+}
+
+.compact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+.compact-list li {
+  padding-left: 18px;
+  position: relative;
+}
+.compact-list li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--line-strong);
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+}
+
+.callout {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 22px;
+  margin-top: 24px;
+}
+.callout p { margin-bottom: 0; }
+.callout ul { margin-bottom: 0; }
+.statement {
+  margin: 0;
+  max-width: 660px;
+  font-size: clamp(1.22rem, 2.2vw, 1.55rem);
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+}
+
+.page-title {
+  padding: 58px 0 30px;
+  border-bottom: 1px solid var(--line);
+}
+.page-title h1 {
+  font-size: clamp(1.9rem, 4vw, 2.55rem);
+  max-width: 780px;
+}
+.page-title p {
+  max-width: var(--measure);
+  margin: 20px 0 0;
+  color: #303030;
+  font-size: 1.06rem;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.three-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.evidence-card {
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+.evidence-card h3,
+.mini-card h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+.evidence-card p,
+.mini-card p {
+  margin-bottom: 0;
+  color: #303030;
+}
+.mini-card {
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+.source-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 18px;
+}
+.source-list li {
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+.source-list li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.source-list strong {
+  display: block;
+  margin-bottom: 3px;
+}
+.source-list span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+.source-list p {
+  margin: 8px 0 0;
+}
+.cv-list {
+  display: grid;
+  gap: 18px;
+}
+.cv-row {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 22px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+.cv-row:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.cv-row dt {
+  color: var(--muted);
+}
+.cv-row dd {
+  margin: 0;
+}
+.rule-top { border-top: 1px solid var(--line); padding-top: 26px; }
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 26px 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer-inner p { margin: 0; }
+
+@media (max-width: 760px) {
+  .header-inner { align-items: flex-start; flex-direction: column; padding: 20px 0; }
+  .brand { min-width: 0; }
+  .nav { justify-content: flex-start; gap: 12px; }
+  .hero-profile { grid-template-columns: 1fr; gap: 28px; }
+  .profile-photo { max-width: 240px; }
+  .hero { padding: 52px 0 34px; }
+  .section-header { grid-template-columns: 1fr; gap: 16px; }
+  .two-column { grid-template-columns: 1fr; gap: 24px; }
+  .three-column,
+  .evidence-grid { grid-template-columns: 1fr; }
+  .cv-row { grid-template-columns: 1fr; gap: 4px; }
+  .footer-inner { flex-direction: column; }
+}
+  </style>
+  <link rel="stylesheet" href="./style.css">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Manu Agrawal",
-  "url": "https://manuagrawal.com",
-  "jobTitle": "AI Infrastructure and Healthcare AI Architect",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Oracle Health"
-  },
-  "sameAs": [
-    "https://github.com/managraw"
-  ],
-  "knowsAbout": [
-    "Agentic AI infrastructure",
-    "Healthcare AI systems",
-    "AI governance",
-    "AI observability",
-    "Cloud-scale production systems",
-    "Human-in-the-loop automation",
-    "Trustworthy AI",
-    "Regulated healthcare environments"
-  ],
-  "subjectOf": [
+  "@graph": [
     {
-      "@type": "Article",
-      "headline": "Enterprise AI's Next Big Advantage Isn't What You Think",
-      "url": "https://seniorexecutive.com/enterprise-ai-next-big-advantage/",
-      "datePublished": "2026-06-04",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Senior Executive"
+      "@type": "WebSite",
+      "@id": "https://manuagrawal.com/#website",
+      "name": "Manu Agrawal",
+      "url": "https://manuagrawal.com/"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://manuagrawal.com/#profilepage",
+      "url": "https://manuagrawal.com/",
+      "name": "Manu Agrawal",
+      "dateModified": "2026-06-10",
+      "mainEntity": {
+        "@id": "https://manuagrawal.com/#person"
       }
     },
     {
-      "@type": "Article",
-      "headline": "From Cloud Infrastructure to Healthcare AI: Manu Agrawal's Playbook for Reliable Autonomous Systems",
-      "url": "https://techbullion.com/from-cloud-infrastructure-to-healthcare-ai-manu-agrawals-playbook-for-reliable-autonomous-systems/",
-      "datePublished": "2026-06-02",
-      "publisher": {
+      "@type": "Person",
+      "@id": "https://manuagrawal.com/#person",
+      "name": "Manu Agrawal",
+      "url": "https://manuagrawal.com/",
+      "image": "https://manuagrawal.com/manu-agrawal-media-cover.jpg",
+      "jobTitle": "Chief Architect and Gen AI Leader",
+      "description": "AI infrastructure and healthcare AI architect focused on governed agentic AI systems, trustworthy enterprise AI deployment, and cloud-scale production systems.",
+      "worksFor": {
         "@type": "Organization",
-        "name": "TechBullion"
-      }
-    },
-    {
-      "@type": "Article",
-      "headline": "Building Trustworthy AI Systems For Regulated Healthcare Environments",
-      "url": "https://techround.co.uk/artificial-intelligence/building-trustworthy-ai-systems-for-regulated-healthcare-environments/",
-      "datePublished": "2026-05-29",
-      "publisher": {
-        "@type": "Organization",
-        "name": "TechRound"
-      }
+        "name": "Oracle Health"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/manu-agrawal-85867b71/",
+        "https://github.com/managraw",
+        "https://seniorexecutive.com/profile/Manu-Agrawal-Gen-AI-Leader-Architect-Oracle/a6116e8f-8b82-4f64-97ab-2fc5a77d771b"
+      ],
+      "knowsAbout": [
+        "Agentic AI infrastructure",
+        "Healthcare AI systems",
+        "AI governance",
+        "AI observability",
+        "Cloud-scale production systems",
+        "Human-in-the-loop automation",
+        "Trustworthy AI",
+        "Regulated healthcare environments"
+      ],
+      "subjectOf": [
+        {
+          "@type": "Article",
+          "headline": "Enterprise AI's Next Big Advantage Isn't What You Think",
+          "datePublished": "2026-06-04",
+          "url": "https://seniorexecutive.com/enterprise-ai-next-big-advantage/",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Senior Executive"
+          }
+        },
+        {
+          "@type": "Article",
+          "headline": "From Cloud Infrastructure to Healthcare AI: Manu Agrawal's Playbook for Reliable Autonomous Systems",
+          "datePublished": "2026-06-02",
+          "url": "https://techbullion.com/from-cloud-infrastructure-to-healthcare-ai-manu-agrawals-playbook-for-reliable-autonomous-systems/",
+          "publisher": {
+            "@type": "Organization",
+            "name": "TechBullion"
+          }
+        },
+        {
+          "@type": "Article",
+          "headline": "Building Trustworthy AI Systems For Regulated Healthcare Environments",
+          "datePublished": "2026-05-29",
+          "url": "https://techround.co.uk/artificial-intelligence/building-trustworthy-ai-systems-for-regulated-healthcare-environments/",
+          "publisher": {
+            "@type": "Organization",
+            "name": "TechRound"
+          }
+        }
+      ]
     }
-  ],
-  "@id": "https://manuagrawal.com/#person"
+  ]
 }
   </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="wrap nav-wrap">
-      <a class="brand" href="index.html" aria-label="Manu Agrawal home">
-        <span>Manu Agrawal</span>
-        <small>AI Infrastructure · Healthcare AI · Governed Agentic Systems</small>
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" aria-label="Manu Agrawal home">
+        <strong>Manu Agrawal</strong>
+        <span>AI infrastructure, healthcare AI, and governed autonomy</span>
       </a>
       <nav class="nav" aria-label="Primary navigation">
-        <a class="active" href="index.html">Home</a>
-<a class="" href="about.html">About</a>
-<a class="" href="work.html">Work</a>
-<a class="" href="media.html">Press</a>
-<a class="" href="publications.html">Publications</a>
-<a class="" href="service.html">Service</a>
-<a class="" href="recognition.html">Recognition</a>
-<a class="" href="contact.html">Contact</a>
+        <a class="active" href="./index.html" aria-current="page">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./work.html">Work</a>
+        <a href="./media.html">Press</a>
+        <a href="./service.html">Service</a>
+        <a href="./recognition.html">Recognition</a>
+        <a href="./cv.html">CV</a>
       </nav>
     </div>
   </header>
   <main id="main">
-
     <section class="hero">
-      <div class="wrap hero-grid">
+      <div class="container hero-profile">
         <div>
-          <span class="eyebrow">Production AI · Agentic Systems · Healthcare</span>
-          <h1>Building governed, production-grade agentic AI for enterprise and healthcare.</h1>
-          <p class="lede">I work at the intersection of cloud infrastructure, AI systems, and regulated healthcare environments, with experience building and scaling AI/cloud services at AWS and leading trustworthy agentic AI initiatives at Oracle Health.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="work.html">View selected work</a>
-            <a class="button" href="media.html">Read press & commentary</a>
+          <p class="kicker">Official profile</p>
+          <h1>Manu Agrawal</h1>
+          <p class="lede">Chief Architect and Gen AI leader focused on governed agentic AI systems, healthcare AI, and cloud-scale production infrastructure for enterprise and regulated environments.</p>
+          <div class="hero-links" aria-label="Selected links">
+            <a href="./about.html">About me</a>
+            <a href="./media.html">Published coverage</a>
+            <a href="./cv.html">Professional CV</a>
+            <a href="https://www.linkedin.com/in/manu-agrawal-85867b71/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+          <div class="hero-meta" aria-label="Focus areas">
+            <span class="tag">Agentic AI infrastructure</span>
+            <span class="tag">Healthcare AI systems</span>
+            <span class="tag">AI governance</span>
+            <span class="tag">Cloud-scale platforms</span>
           </div>
         </div>
-        <aside class="hero-card" aria-label="Professional summary">
-          <div>
-            <h2>Current focus</h2>
-            <p>Gen AI leader and Architect focused on governed agentic AI systems for healthcare and public-sector use cases.</p>
-          </div>
-          <div class="metric-list">
-            <div class="metric"><strong>Core thesis</strong><span>AI moves from demos to trustworthy systems through orchestration, governance, evaluation, observability, auditability, and human oversight.</span></div>
-            <div class="metric"><strong>Professional service</strong><span>Reviewer, ICML 2026 Workshop on Agents in the Wild, co-located with ICML.</span></div>
-            <div class="metric"><strong>Public commentary</strong><span>Featured across Senior Executive, TechBullion, and TechRound.</span></div>
-          </div>
-        </aside>
+        <figure class="profile-photo">
+          <img src="./manu-agrawal-media-cover.jpg" alt="Manu Agrawal">
+        </figure>
       </div>
     </section>
 
     <section class="section">
-      <div class="wrap">
-        <div class="section-title">
-          <h2>Focus areas</h2>
-          <p>A technical lane centered on the operational foundation that makes AI trustworthy in production.</p>
-        </div>
-        <div class="grid three">
-          <div class="card"><h3>Agentic AI infrastructure</h3><p>Runtime architecture for systems that reason, call tools, coordinate workflows, and remain governable.</p></div>
-          <div class="card"><h3>Healthcare AI systems</h3><p>AI patterns for regulated healthcare environments where auditability, safety, and workflow fit matter.</p></div>
-          <div class="card"><h3>Cloud-scale production systems</h3><p>Operational discipline shaped by large-scale cloud infrastructure, reliability engineering, and service launch execution.</p></div>
-          <div class="card"><h3>Governance and observability</h3><p>Policy-aware execution, monitoring, evaluation, logging, and human oversight as first-class architecture.</p></div>
-          <div class="card"><h3>Human-in-the-loop automation</h3><p>Governed autonomy that escalates correctly and keeps accountable humans in control of high-stakes work.</p></div>
-          <div class="card"><h3>Trustworthy AI</h3><p>Moving enterprise AI from impressive prototypes toward systems organizations can safely operate at scale.</p></div>
+      <div class="container section-header">
+        <h2>About me</h2>
+        <div class="section-body">
+          <p>I work at the intersection of large-scale cloud infrastructure, AI systems, and regulated healthcare environments. My current focus is the architecture of agentic AI systems that can be governed, evaluated, observed, audited, and safely integrated into real enterprise workflows.</p>
+          <p>My professional background spans Oracle Health and Amazon Web Services, with public coverage describing work across healthcare AI, Amazon Bedrock, multimodal AI infrastructure, CloudFront, Rekognition, Textract, and reliable autonomous systems.</p>
+          <p>This site is the canonical public profile for my work. It collects verified source links, professional service, affiliations, and selected public coverage in one place so readers can connect the same person, field, and body of work.</p>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="wrap grid two">
-        <div class="panel card">
-          <h2>Working thesis</h2>
-          <p class="quote">The future of AI will not be won by demos. It will be won by systems enterprises can safely operate, govern, monitor, and trust.</p>
-          <div class="tags"><span class="tag">Governed autonomy</span><span class="tag green">Enterprise AI</span><span class="tag purple">Healthcare AI</span></div>
+      <div class="container section-header">
+        <h2>Public evidence map</h2>
+        <div class="section-body evidence-grid">
+          <div class="evidence-card">
+            <h3>Published material</h3>
+            <p>Independent coverage and expert commentary appear in Senior Executive, TechBullion, and TechRound, with links collected on the press page.</p>
+          </div>
+          <div class="evidence-card">
+            <h3>Judging and peer review</h3>
+            <p>Reviewer for the ICML 2026 Workshop on Agents in the Wild, reviewing submissions on autonomous agents, enterprise AI agents, and real-world deployment.</p>
+          </div>
+          <div class="evidence-card">
+            <h3>Leading technical roles</h3>
+            <p>Public profiles describe leadership across agentic AI at Oracle Health and cloud-scale AI infrastructure work at Amazon Web Services.</p>
+          </div>
+          <div class="evidence-card">
+            <h3>Professional recognition</h3>
+            <p>Public affiliations include IEEE Senior Member status, Senior Executive AI Think Tank membership, AMIA, and ISPOR.</p>
+          </div>
         </div>
-        <div class="panel card">
-          <h2>Selected recognition</h2>
-          <ul>
-            <li>Expert commentary featured in <a href="https://seniorexecutive.com/enterprise-ai-next-big-advantage/" target="_blank" rel="noopener noreferrer">Senior Executive</a> on the hidden foundation of agentic AI.</li>
-            <li>Profiled by <a href="https://techbullion.com/from-cloud-infrastructure-to-healthcare-ai-manu-agrawals-playbook-for-reliable-autonomous-systems/" target="_blank" rel="noopener noreferrer">TechBullion</a> on cloud infrastructure, healthcare AI, and reliable autonomous systems.</li>
-            <li>Covered by <a href="https://techround.co.uk/artificial-intelligence/building-trustworthy-ai-systems-for-regulated-healthcare-environments/" target="_blank" rel="noopener noreferrer">TechRound</a> on trustworthy AI systems for regulated healthcare environments.</li>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-header">
+        <h2>Selected sources</h2>
+        <div class="section-body">
+          <ul class="source-list">
+            <li>
+              <strong><a href="https://seniorexecutive.com/profile/Manu-Agrawal-Gen-AI-Leader-Architect-Oracle/a6116e8f-8b82-4f64-97ab-2fc5a77d771b" target="_blank" rel="noopener noreferrer">Senior Executive AI Think Tank profile</a></strong>
+              <span>Senior Executive, profile page</span>
+              <p>Public profile identifying Manu Agrawal as Gen AI Leader and Architect at Oracle and describing work in enterprise AI systems, agentic workflows, multimodal AI infrastructure, and healthcare AI.</p>
+            </li>
+            <li>
+              <strong><a href="https://techbullion.com/from-cloud-infrastructure-to-healthcare-ai-manu-agrawals-playbook-for-reliable-autonomous-systems/" target="_blank" rel="noopener noreferrer">From Cloud Infrastructure to Healthcare AI</a></strong>
+              <span>TechBullion, June 2, 2026</span>
+              <p>Feature profile covering the move from AWS cloud infrastructure to Oracle Health and reliable autonomous systems for regulated environments.</p>
+            </li>
+            <li>
+              <strong><a href="https://techround.co.uk/artificial-intelligence/building-trustworthy-ai-systems-for-regulated-healthcare-environments/" target="_blank" rel="noopener noreferrer">Building Trustworthy AI Systems For Regulated Healthcare Environments</a></strong>
+              <span>TechRound, May 29, 2026</span>
+              <p>Coverage of governed healthcare AI systems, human oversight, and deployment constraints in regulated healthcare environments.</p>
+            </li>
           </ul>
         </div>
       </div>
     </section>
 
+    <section class="section">
+      <div class="container section-header">
+        <h2>Working thesis</h2>
+        <div class="section-body">
+          <p class="statement">The next phase of AI will be defined by systems that organizations can safely operate, govern, monitor, and trust, not by demos alone.</p>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <div>
-        <strong>Manu Agrawal</strong>
-        <p>Production AI infrastructure and healthcare AI architecture for governed, trustworthy systems.</p>
-      </div>
-      <div>
-        <a href="https://github.com/managraw" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="media.html">Press</a>
-        <a href="contact.html">Contact</a>
-      </div>
+    <div class="container footer-inner">
+      <p>&copy; 2026 Manu Agrawal.</p>
+      <p><a href="https://www.linkedin.com/in/manu-agrawal-85867b71/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
     </div>
   </footer>
 </body>
