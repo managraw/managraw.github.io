@@ -3,16 +3,16 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://manuagrawal.com/</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <image:image>
       <image:loc>https://manuagrawal.com/manu-agrawal-media-cover.jpg</image:loc>
       <image:title>Manu Agrawal</image:title>
     </image:image>
   </url>
-  <url><loc>https://manuagrawal.com/about.html</loc><lastmod>2026-06-10</lastmod></url>
-  <url><loc>https://manuagrawal.com/work.html</loc><lastmod>2026-06-10</lastmod></url>
-  <url><loc>https://manuagrawal.com/media.html</loc><lastmod>2026-06-10</lastmod></url>
-  <url><loc>https://manuagrawal.com/service.html</loc><lastmod>2026-06-10</lastmod></url>
-  <url><loc>https://manuagrawal.com/recognition.html</loc><lastmod>2026-06-10</lastmod></url>
-  <url><loc>https://manuagrawal.com/cv.html</loc><lastmod>2026-06-10</lastmod></url>
+  <url><loc>https://manuagrawal.com/about.html</loc><lastmod>2026-06-12</lastmod></url>
+  <url><loc>https://manuagrawal.com/work.html</loc><lastmod>2026-06-12</lastmod></url>
+  <url><loc>https://manuagrawal.com/media.html</loc><lastmod>2026-06-12</lastmod></url>
+  <url><loc>https://manuagrawal.com/service.html</loc><lastmod>2026-06-12</lastmod></url>
+  <url><loc>https://manuagrawal.com/recognition.html</loc><lastmod>2026-06-12</lastmod></url>
+  <url><loc>https://manuagrawal.com/cv.html</loc><lastmod>2026-06-12</lastmod></url>
 </urlset>
