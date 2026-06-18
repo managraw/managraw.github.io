@@ -272,18 +272,18 @@ p { margin: 0 0 18px; }
 }
 
 .page-title {
-  padding: 58px 0 30px;
+  padding: 48px 0 28px;
   border-bottom: 1px solid var(--line);
 }
 .page-title h1 {
-  font-size: clamp(1.9rem, 4vw, 2.55rem);
-  max-width: 780px;
+  font-size: clamp(1.55rem, 2.6vw, 2rem);
+  max-width: 680px;
 }
 .page-title p {
   max-width: var(--measure);
-  margin: 20px 0 0;
+  margin: 16px 0 0;
   color: #303030;
-  font-size: 1.06rem;
+  font-size: 1rem;
 }
 
 .two-column {
